@@ -1,0 +1,159 @@
+
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+html {font-size: 16px; line-height: 1.4; font-family: MuseoSans,Arial,sans-serif;}
+
+body {display: block; margin: auto 0; background-color: white;}
+
+a {display: inline-block; padding: 0.4em 0; font-size: 0.875rem; font-style: normal; font-weight: bold; text-transform: uppercase; text-decoration: none; color: white; opacity: 0.8;}
+
+p {margin-bottom: 10px; padding-top: 0.4em; color: #5B5B5B;}
+
+h1 {margin: auto 0; padding-top: 0.4em; color: #5B5B5B}
+
+hr {width: 90%; margin: 10px 5% 10px 5%; background-color: black;}
+
+/*header*/
+
+.navheader {
+    width: 100vw;
+    height: 5vh;
+    background-color: hsl(163,59%,34%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 0;
+}
+
+li {
+    padding-left: 1em;
+}
+.navheader a:hover {color: rgb(172, 168, 168)}
+
+/*navbar*/
+
+.navbar {
+    width: 100vw;
+    height: 70px;
+    margin-top: 10px;
+    float: left
+}
+
+.logo {
+    width: 20vw;
+    object-fit: fill;
+    float: left;
+    margin: 17.5px 0px 17.5px 5vw;
+    display: block
+}
+
+
+
+.imgmenu {background-image: url("../img/menu_icon.png"); display: block}
+
+/*texto*/
+
+a.text {font-size: 0.8em;}
+
+.text {
+    width: 30%;
+    height: 360px;
+    float: left;
+    margin: 20px 5% 20px 5%;
+    display: block;
+}
+
+.title {width: 90%; height: 60px; margin: 0px 5% 10px 5%;}
+
+.content {width: 90%; height: 200px; margin-left: 5%;}
+
+a.mf {font-size: 1em;}
+
+.hv {cursor: pointer;}
+
+
+.moreinf {
+    width: 25%;
+    height: 40px;
+    float: left;
+    margin-left: 25px;
+    background-color: hsl(163,59%,34%);
+    border-radius: 5px;
+    border: 0px;
+    outline: 0;
+}
+
+.gridNav {
+    width: 40%;
+    height: 70px;
+    margin-left: 35%;
+    float: left;
+}
+
+.login {
+    width: 70px;
+    height: 40px;
+    float: right;
+    margin: 15px 10vw 0 0;
+    background-color: hsl(163,59%,34%);
+    border-radius: 10px;
+    border: 0.5px #5B5B5B;
+    outline: 0;
+}
+
+.haveLog {
+    width: 120px;
+    height: 40px;
+    float: left;
+    margin: 15px 0 0 65%;
+    background-color: hsl(163,59%,34%);
+    border-radius: 10px;
+    border: 0.5px #5B5B5B;
+    outline: 0;
+    box-shadow: inset  2px 2px #5B5B5B;
+}
+
+.banner {
+    width: 55%;
+    height: 360px;
+    float: left;
+    margin: 20px 5% 20px -60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.gridNav .login a:hover {
+	cursor: pointer;
+	background-color: hsl(163,59%,34%);
+} 
+@media screen and (min-width: 1026px) {
+    .imgbanner {background-image: url("../img/banner.jpg"); display: block;} 
+}
+
+@media only screen and (max-width: 425px) {
+    .banner .imgbanner{display: none;}
+    .logo {display: none}
+    .login {margin-right: -50px}
+    .banner {display: none}
+    .moreinf {width: 90%}
+    .text {width: 90%;height: 220}
+    .title {padding-bottom: 2em}
+    .content {padding-bottom: 3em}
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 426px) {
+    .banner .imgbanner{display: none}
+    .moreinf {width: 90%}
+    .text {width: 90%;height: 220;}
+    .title {padding-bottom: 2em}
+    .content {padding-bottom: 3em}
+}

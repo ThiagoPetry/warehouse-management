@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+	font-family: univers;
+	src: url(../fonte/univers-75-black-oblique.otf);
+}
+
+html {font-size: 16px; line-height: 1.4; font-family: MuseoSans,Arial,sans-serif;}
+
+body {display: block; margin: auto 0; background-color: white;}
+
+a {display: inline-block; padding: 0.4em 0; font-size: 0.875rem; font-style: normal; font-weight: bold; text-transform: uppercase; text-decoration: none; color: white; opacity: 0.8;}
+
+p {margin-bottom: 10px; padding-top: 0.4em; color: #5B5B5B;}
+
+h1 {margin: auto 0; padding-top: 0.4em; color: #5B5B5B}
+
+hr {width: 90%; margin: 10px 5% 10px 5%; background-color: black;}
+
+/* header */
+
+.navheader {
+    width: 100%;
+    float: left;
+    background-color: hsl(163,59%,34%);
+}
+
+.info-name {
+	width: 480px;
+	height: 80px;
+	float: left;
+}
+
+.info-name .msg {
+	margin-top: 24px;
+    float: left;
+    margin-left: 20px;
+	font-weight: bold;
+    font-size: 1.5em;
+	color: #e7e7e7;
+	text-shadow: 1px 2px 3px rgb(80, 80, 80);
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    float: left;
+    margin: 6px 0px 17.5px 20px;
+	color: white;
+	font-size: 3em;
+	font-family: univers;
+}
+
+.navheader .btnMenu {
+	float: right;
+	margin-right: 20px;
+}
+
+.navheader .btnMenu a input {
+	height: 40px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(202, 16, 16);
+    color: rgb(255, 255, 255);
+	box-shadow: 1px 1px 3px rgb(80, 80, 80);
+	outline: 0;
+}
+
+.navheader .btnMenu a input:hover {
+	cursor: pointer;
+	background-color: rgb(168, 21, 21);
+}
+
+.container-atu {
+	width: 30%;
+	float: left;
+	margin-top: 60px;
+	margin-left: 35%;
+	margin-bottom: 20px;
+	border: 2px solid transparent;
+	box-shadow: 1px 1px 5px rgb(156, 156, 156);
+	border-radius: 10px;
+}
+
+.container-atu .info-atu {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+    text-align: center;
+	color: #5B5B5B;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.container-atu .area-atu {
+	width: 80%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 10%;
+}
+
+.area-atu label {
+	width: 90%;
+	height: 30px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 5%;
+    color: #5B5B5B;
+	font-weight: bold;
+}
+
+.area-atu input {
+	width: 90%;
+	height: 35px;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 25px;
+    color: rgb(59, 59, 59);
+	border: 0px;
+	background-color: transparent;
+	border-bottom: 2px solid rgb(104, 104, 104);
+	outline: 0;
+    font-size: 1.2em;
+}
+
+.area-atu .inID {
+	width: 20px;
+	height: 30px;
+	float: left;
+	margin-top: 10px;
+	margin-left: -10px;
+	margin-bottom: 0px;
+	text-align: center;
+    color: rgb(59, 59, 59);
+	background-color: transparent;
+    font-size: 1.2em;
+	border: 0px;
+	cursor: default;
+}
+
+.area-atu .laID {
+	width: 40px;
+	height: 36px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 5%;
+    color: #5B5B5B;
+	font-weight: bold;
+}
+
+::placeholder {
+	font-size: 1.4em;
+}
+
+.confirmar {
+	width: 90%;
+	height: 60px;
+	float: left;
+	margin-top: -15px;
+	margin-left: 5%;
+	margin-bottom: 25px;
+}
+
+.confirmar button {
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-top: 15px;
+	font-size: 1em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: hsl(163,59%,34%);
+    border-radius: 10px;
+    border: 0.5px #5B5B5B;
+    outline: 0;
+	color: #e7e7e7;
+	font-weight: bold;
+}
+
+.confirmar button:hover {
+	cursor: pointer;
+	background-color: rgb(33, 121, 96);
+}
+
+.confirmar .cancel {
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-top: 8px;
+    margin-left: 10px;
+	font-size: 1em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(92, 92, 92);
+    border-radius: 10px;
+    border: 0.5px #5B5B5B;
+    outline: 0;
+	color: #e7e7e7;
+	font-weight: bold;
+}
+
+.confirmar .cancel:hover {
+	cursor: pointer;
+	background-color: rgb(80, 80, 80);
+}
+
+/* Media screen */
+
+@media only screen and (max-width: 375px) {
+
+	.navheader {
+		height: 40px;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	ul.ulhead {
+		margin-left: -30px;
+	}
+	
+	a {
+		font-size: 1.2em;
+	}
+
+	.navheader ul li {
+		margin-left: 0px;
+	}
+	
+	.contact {
+		display: none;
+	}
+
+	.logo {
+		margin-left: 30%;
+	}
+
+	hr {
+		width: 80%;
+		margin: 100px 5% 0px 10%;
+		background-color: #e6e6e6;
+	}
+
+	.container-atu {
+		width: 80%;
+		margin-top: 40px;
+		margin-left: 10%;
+	}
+
+	.container-atu .info-atu {
+		font-size: 1em;
+	}
+
+	.container-atu .area-atu {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 0px;
+	}
+
+	.area-atu label {
+		font-size: 0.875em;
+	}
+
+	::placeholder {
+		font-size: 1em;
+	}
+
+	.confirmar {
+		margin-bottom: 20px;
+	}
+
+	.confirmar button {
+		width: 90px;
+		font-size: 0.9em;
+		margin-left: 30%;
+	}
+
+	.confirmar #msgErro {
+		margin-top: 50px;
+		margin-left: 10%;
+		font-size: 1em;
+	}
+}

@@ -1,0 +1,842 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@font-face {
+	font-family: univers;
+	src: url(../fonte/univers-75-black-oblique.otf);
+}
+
+html {font-size: 16px; line-height: 1.4; font-family: MuseoSans,Arial,sans-serif;}
+
+body {display: block; margin: auto 0; padding: 0; background-color: white; cursor: default;}
+
+a {display: inline-block; padding: 0.4em 0; font-size: 0.875rem; font-style: normal; font-weight: bold; text-transform: uppercase; text-decoration: none; color: white; opacity: 0.8;}
+
+p {margin-bottom: 10px; padding-top: 0.4em; color: #5B5B5B;}
+
+h1 {margin: auto 0; padding-top: 0.4em; color: #5B5B5B}
+
+hr {width: 90%; margin: 10px 5% 10px 5%; background-color: black;}
+
+/* header */
+
+.navheader {
+    width: 100%;
+    float: left;
+    background-color: hsl(163,59%,34%);
+}
+
+.info-name {
+	width: 480px;
+	height: 80px;
+	float: left;
+}
+
+.info-name .msg {
+	margin-top: 24px;
+    float: left;
+    margin-left: 20px;
+	font-weight: bold;
+    font-size: 1.5em;
+	color: #e7e7e7;
+	text-shadow: 1px 2px 3px rgb(80, 80, 80);
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    float: left;
+    margin: 6px 0px 17.5px 20px;
+	color: white;
+	font-size: 3em;
+	font-family: univers;
+}
+
+.navheader .btnMenu {
+	float: right;
+	margin-right: 20px;
+}
+
+.navheader .btnMenu a input {
+	height: 40px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+    color: rgb(37, 37, 37);
+	box-shadow: 1px 1px 3px rgb(80, 80, 80);
+	outline: 0;
+}
+
+.navheader .btnMenu a input:hover {
+	cursor: pointer;
+	background-color: rgb(224, 224, 224);;
+}
+
+.navheader .btnMenu a .exit {
+	height: 40px;
+	float: right;
+	margin-top: 15px;
+	font-size: 1.2em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(202, 16, 16);
+    color: white;
+	outline: 0;
+}
+
+.navheader .btnMenu a .exit:hover {
+	cursor: pointer;
+	background-color: rgb(168, 21, 21);
+}
+
+.navheader .btnMenuAll a input {
+	height: 40px;
+	float: right;
+	margin-top: 15px;
+	font-size: 1.2em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(202, 16, 16);
+    color: white;
+	outline: 0;
+}
+
+.navheader .btnMenuAll a input:hover {
+	cursor: pointer;
+	background-color: rgb(168, 21, 21);
+}
+
+.navheader .btnMenuAll {
+	float: right;
+	margin-right: 20px;
+}
+
+.dropbtn {
+	display: none;
+}
+
+.container-controle {
+	width: 40%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30%;
+	border: 2px solid transparent;
+	box-shadow: 1px 1px 5px rgb(156, 156, 156);
+	border-radius: 10px;
+}
+
+.container-controle .info-controle {
+	width: 50%;
+	height: 40px;
+	font-size: 1.2em;
+	margin-top: 10px;
+	color: rgb(51, 51, 51);
+}
+
+.container-controle .divisor {
+	width: 2px;
+	height: 100px;
+    float: left;
+    margin-top: -50px;
+    margin-left: 20%;
+	background-color: rgb(212, 212, 212);
+}
+
+.container-controle .info-controle p {
+    margin-left: 50px;
+	font-weight: bold;
+	color: #525252;
+}
+
+.container-controle .info-controle button {
+    width: 100px;
+	height: 40px;
+	float: left;
+	margin-top: 5px;
+    margin-left: 86px;
+	font-size: 0.8em;
+	border: 0px;
+	border-radius: 2px;
+    background-color: rgb(173, 22, 22);
+    text-transform: uppercase;
+    color: white;
+	outline: 0;
+}
+
+.container-controle .area-controle {
+	width: 40%;
+	float: right;
+    margin-top: -50px;
+	margin-bottom: 20px;
+}
+
+.confirmar {
+	width: 90%;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 0%;
+	margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.confirmar button {
+	width: 150px;
+	height: 60px;
+	float: right;
+	margin-top: 15px;
+	font-size: 1.5em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: hsl(163,59%,34%);
+    color: white;
+	outline: 0;
+}
+
+.confirmar button:hover {
+	cursor: pointer;
+	background-color: rgb(35, 126, 100);
+}
+
+.msg-status {
+    width: 40%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 30%;
+	margin-bottom: 50px;
+	border: 2px solid transparent;
+	box-shadow: 1px 1px 5px rgb(156, 156, 156);
+	border-radius: 10px;
+    text-align: center;
+}
+
+#error p {
+    width: 60%;
+    height: 20px;
+    margin-left: 18%;
+    margin-bottom: 20px;
+}
+
+#success p {
+    width: 60%;
+    height: 20px;
+    margin-left: 18%;
+    margin-bottom: 20px;
+}
+
+/* ADM - Cadastro */
+
+.container-adm {
+	width: 40%;
+	float: left;
+	margin-top: 20px;
+	margin-left: 30%;
+	border: 2px solid transparent;
+	box-shadow: 1px 1px 5px rgb(156, 156, 156);
+	border-radius: 10px;
+}
+
+.container-adm .cadastro {
+	width: 80%;
+	font-size: 1.2em;
+	margin-top: 20px;
+	margin-left: 60px;
+	color: rgb(51, 51, 51);
+}
+
+.container-info {
+	width: 100%;
+	font-size: 1.4em;
+	margin-top: -10px;
+	color: rgb(51, 51, 51);
+	font-weight: bold;
+	text-align: center;
+}
+
+.cadastro .area-cad {
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	margin-bottom: 20px;
+}
+
+.area-cad label {
+	width: 90%;
+	float: left;
+	margin-top: 30px;
+	margin-left: 5%;
+    color: #5B5B5B;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.area-cad label:first-child {
+	margin-top: 10px;
+}
+
+.area-cad input:focus {
+	outline: 0;
+}
+
+.area-cad input {
+	width: 90%;
+	height: 35px;
+	float: left;
+	margin-left: 5%;
+    color: rgb(41, 41, 41);
+	border: 0px;
+	background-color: transparent;
+	border-bottom: 2px solid rgb(104, 104, 104);
+	outline: 0;
+	font-size: 1em;
+}
+
+::placeholder {
+	font-size: 1.2em;
+}
+
+.confirmar {
+	width: 90%;
+	height: 60px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-bottom: 25px;
+}
+
+.confirmar-cad button {
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 18%;
+	font-size: 0.8em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: hsl(163,59%,34%);
+    color: white;
+	outline: 0;
+}
+
+.confirmar-cad .btnCancelar {
+	width: 100px;
+	height: 40px;
+	margin-top: -40px;
+	margin-left: 52%;
+	font-size: 0.8em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(92, 92, 92);
+    color: white;
+	outline: 0;
+}
+
+::placeholder {
+	font-size: 1em;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: hsl(163,59%,34%);
+}
+
+.btnCancelar:hover {
+	cursor: pointer;
+	background-color: rgb(80, 80, 80);
+}
+
+/* ADM - Atualizar */
+
+.container-adm .atualizar {
+	width: 100%;
+	font-size: 1em;
+	margin-top: 10px;
+	color: rgb(51, 51, 51);
+}
+
+.container-adm .table-atu {
+	width: 95%;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-left: 2.5%;
+	margin-bottom: 10px;
+	color: rgb(51, 51, 51);
+}
+
+.btn-atu {
+	height: 25px;
+	border: 0px;
+	border-radius: 2px;
+	background-color: rgb(0, 107, 77);
+    color: white;
+	outline: 0;
+}
+
+.btn-atu h3, .btn-exc h3 {
+	margin-top: 5px;
+	font-size: 1em;
+}
+
+.btn-atu img, .btn-exc img {
+	display: none;
+}
+
+.btn-exc {
+	height: 25px;	
+	border: 0px;
+	border-radius: 2px;
+	background-color: rgb(0, 107, 77);
+    color: white;
+	outline: 0;
+}
+
+.confirmar-atu button {
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 20%;
+	font-size: 0.7em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: hsl(163,59%,34%);
+    color: white;
+	outline: 0;
+}
+
+.confirmar-atu .btnCancelar {
+	width: 100px;
+	height: 40px;
+	margin-top: -40px;
+	margin-left: 50%;
+	font-size: 0.7em;
+	border: 0px;
+	border-radius: 5px;
+	background-color: rgb(92, 92, 92);
+    color: white;
+	outline: 0;
+}
+
+::placeholder {
+	font-size: 1em;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgb(32, 124, 98);
+}
+
+.btnCancelar:hover {
+	cursor: pointer;
+	background-color: rgb(80, 80, 80);
+}
+
+.tb input {
+	background-color: transparent;
+    border: 0px;
+    height: 20px;
+    width: 80px;
+	text-align: center;
+	font-size: 1em;
+	color: #464646;
+}
+
+input:focus {
+	outline-width: 2px;
+	outline-style: solid;
+	outline-color: rgb(129, 129, 129);
+}
+
+.atu-voltar {
+	width: 100%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.atu-voltar input {
+	float: right;
+	margin-right: 12px;
+	border: 0px;
+	background-color: transparent;
+}
+
+.atu-voltar input {
+	cursor: pointer;
+	outline: 0;
+}
+
+/* ADM - Log */
+
+#log {
+	width: 40%;
+	margin-left: 30%;
+	margin-bottom: 25px;
+}
+
+#log .container-info p {
+	width: 100%;
+}
+
+.container-adm .table-log {
+	width: 95%;
+	font-size: 1.2em;
+	margin-top: 10px;
+	margin-left: 2.5%;
+	margin-bottom: 10px;
+	color: rgb(51, 51, 51);
+}
+
+.log-voltar {
+	width: 100%;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.log-voltar input {
+	float: right;
+	margin-right: 12px;
+	border: 0px;
+	background-color: transparent;
+}
+
+.log-voltar input {
+	cursor: pointer;
+	outline: 0;
+}
+
+.tb {
+	border-collapse: collapse;
+	width: 100%;
+}
+  
+.tb td, .tb th {
+	border: 1px solid #ddd;
+	padding: 2px;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+.tb tr:nth-child(even){background-color: #f2f2f2;}
+
+.tb tr:hover {background-color: rgb(236, 236, 236);}
+
+.tb th {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: hsl(163,59%,34%);
+	color: white;
+}
+
+/* Importante */
+
+#error, #success, #cadastrado, #atualizado, #btnMenu, #cad, #log, #atu,
+#telaForAtu, #dropdownAdm, #dropdownUser, .btnMenuAll {
+	display: none;
+}
+
+/* Media screen */
+
+@media only screen and (max-width: 375px) {
+	.navheader {
+		height: 70px;
+	}
+
+	.info-name {
+		width: 100%;
+		height: 70px;
+	}
+
+	.logo {
+		width: 100%;
+		margin-top: 5px;
+		margin-left: 0px;
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.info-name .msg {
+		margin-top: -20px;
+		margin-left: 126px;
+		font-size: 1em;
+		text-shadow: 1px 1px 1px rgb(80 80 80);
+	}
+
+	.navheader .btnMenu {
+		display: none;
+	}
+
+	.navheader .btnMenuAll {
+		display: none;
+	}
+
+	.navbar .msg {
+		margin-top: -5px;
+		margin-left: 116px;
+	}
+
+	.container-controle {
+		width: 80%;
+		margin-top: 40px;
+		margin-left: 10%;
+		box-shadow: 2px 2px 10px rgb(156 156 156);
+	}
+
+	.container-controle .info-controle {
+		width: 100%;
+		height: 100px;
+		margin-top: -10px;
+	}
+
+	.container-controle .info-controle p {
+		margin-left: 0px;
+		text-align: center;
+	}
+
+	.container-controle .info-controle button {
+		margin-left: 100px;
+	}
+
+	.container-controle .divisor {
+		width: 240px;
+		height: 2px;
+		margin-top: 5px;
+		margin-left: 10%;
+		background-color: #c2c2c2;
+	}
+
+	.container-controle .area-controle {
+		width: 100%;
+		height: 100px;
+		margin-top: -10px;
+		margin-bottom: 0px;
+	}
+
+	.confirmar {
+		margin-bottom: 0px;
+	}
+
+	.confirmar button {
+		margin-top: 15px;
+	}
+
+	.msg-status {
+		width: 80%;
+		margin-top: 20px;
+		margin-left: 10%;
+		font-size: 0.9em;
+	}
+
+	.dropdown-content > a {
+		padding-top: 0px;
+		padding-bottom: 30px;
+		padding-left: 10px;
+		padding-right: 8px;
+		position: relative;
+	}
+
+	.dropdown-content > a::before {
+		content: "";
+		width: 90%;
+		height: 0.5px;
+		left: 0;
+		margin-top: -20px;
+		margin-left: 5%;
+		position: absolute;
+		top: 50%;
+		background-color: rgb(243, 243, 243);
+	}
+
+	.dropdown-content > a:first-child::before {
+		display: none;
+	}
+
+	.dropbtn {
+		display: block;
+		width: 70px;
+		height: 70px;
+		float: left;
+		background-image: url("../img/btnMenu.png");
+		background-position: center;
+		background-size: cover;
+		border-radius: 50px;
+		position: fixed;
+		border: none;
+		cursor: pointer;
+	}
+
+	.dropbtn:focus {
+		outline: thin dotted;
+		outline: 0px auto -webkit-focus-ring-color;
+		outline-offset: 0px;
+	}
+
+	.dropdown {
+		margin-top: 570px;
+		margin-left: -90px;
+		position: relative;
+		display: inline-block;
+		box-shadow: 1px 1px 5px #525252;
+	}
+
+	.dropdown-content {
+		margin-top: -140px;
+		margin-left: -16px;
+		display: none;
+		position: fixed;
+		background-color: hsl(163,59%,34%);
+		min-width: 100px;
+		box-shadow: 1px 1px 5px rgb(160, 160, 160);
+		z-index: 1;
+		border-radius: 5px;
+	}
+
+	.dropdown-content a {
+		color: rgb(236, 236, 236);
+		padding: 8px;
+		font-size: 0.8em;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: rgb(32, 122, 97);
+	}
+
+	.show {
+		display: block;
+	}
+
+	#cad {
+		width: 80%;
+		margin-left: 10%;
+		box-shadow: 2px 2px 10px rgb(156 156 156);
+	}
+
+	.container-info {
+		font-size: 1.2em;
+	}
+
+	.cadastro .area-cad {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.container-adm .cadastro {
+		margin-top: 10px;
+	}
+
+	.area-cad label {
+		margin-top: 20px;
+		margin-left: -25px;
+		font-size: 0.8em;
+	}
+
+	::placeholder {
+		font-size: 0.8em;
+	}
+
+	.area-cad input {
+		margin-left: -25px;
+	}
+
+	.confirmar-cad button {
+		height: 30px;
+		margin-top: 12px;
+		margin-left: -20px;
+		font-size: 0.7em;
+	}
+
+	.confirmar-cad .btnCancelar {
+		height: 30px;
+		float: left;
+		margin-top: 12px;
+		margin-left: 10px;
+		font-size: 0.7em;
+	}
+
+	#log {
+		width: 80%;
+		margin-left: 10%;
+		box-shadow: 2px 2px 10px rgb(156 156 156);
+	}
+
+	.container-adm .table-log {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	#log .tb {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.tb {
+		width: 80%;
+		font-size: 1em;
+	}
+
+	.tb input {
+		width: 50px;
+	}
+
+	.tb td {
+		font-size: 0.8em;
+	}
+
+	#atu {
+		width: 100%;
+		margin-left: 0%;
+		box-shadow: 0px 0px 0px;
+	}
+
+	.atu-voltar {
+		margin-left: -37%;
+	}
+
+	.container-adm .table-atu {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.btn-atu {
+		width: 35px;
+		height: 35px;
+		background-color: transparent;
+	}
+
+	.btn-atu h3 {
+		display: none;
+	}
+
+	.btn-atu img {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.btn-exc {
+		width: 35px;
+		height: 35px;
+		background-color: transparent;
+	}
+
+	.btn-exc h3 {
+		display: none;
+	}
+
+	.btn-exc img {
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-position: center;
+		background-size: cover;
+	}
+}
